@@ -1,0 +1,97 @@
+/*généralités*/
+
+body{
+    margin: 1;
+    height: 100vh;
+
+}
+
+.div-main {
+    /*border: 1px solid black;*/
+    height: 50%;
+    width: 50%;
+    font-size: 0; /* Supprime l'espace entre les divs en réduisant la taille de police à 0 */
+}
+
+
+.div-insideBloc{
+    border: 1px solid black;
+    height: 12.1%;
+}
+
+.div-inline {
+    display: inline-block;
+    /*border: 1px solid red;*/
+    height: 100%;
+    width: 12.5%;
+    margin: 0;
+    box-sizing: border-box;
+    background: black;
+}
+
+.div-inline:hover{
+    background: gray;
+    cursor:pointer;
+}
+
+/********************************************************/
+/*premiere ligne*/
+.div-insideBloc>.div-inline:nth-child(2n){
+    background: white;
+}
+
+.div-insideBloc>.div-inline:nth-child(2n):hover{
+    background: gray;
+}
+
+/*deuxième ligne*/
+.div-insideBloc2>.div-inline:nth-child(2n){
+    background: black;
+}
+
+.div-insideBloc2>.div-inline:nth-child(2n+1){
+    background: white;
+}
+
+.div-insideBloc2>.div-inline:nth-child(2n+1):hover{
+    background: gray;
+}
+
+/*quatrième ligne*/
+.div-insideBloc4>.div-inline:nth-child(2n){
+    background: black;
+}
+
+.div-insideBloc4>.div-inline:nth-child(2n+1){
+    background: white;
+}
+
+.div-insideBloc4>.div-inline:nth-child(2n+1):hover{
+    background: gray;
+}
+
+/*sixième ligne*/
+.div-insideBloc6>.div-inline:nth-child(2n){
+    background: black;
+}
+
+.div-insideBloc6>.div-inline:nth-child(2n+1){
+    background: white;
+}
+
+.div-insideBloc6>.div-inline:nth-child(2n+1):hover{
+    background: gray;
+}
+
+/*huitième ligne*/
+.div-insideBloc8>.div-inline:nth-child(2n){
+    background:black
+}
+
+.div-insideBloc8>.div-inline:nth-child(2n+1){
+    background: white;
+}
+
+.div-insideBloc8>.div-inline:nth-child(2n+1):hover{
+    background: gray;
+}
